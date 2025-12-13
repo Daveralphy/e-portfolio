@@ -3,270 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daveal Raphael - Product Designer &amp; Fullstack Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/jpeg" href="images/dp.jpg">
-    <style>
-        :root {
-            --primary-bg: #FFFFFF;
-            --secondary-bg: #F0F4F8;
-            --accent-color: #66BB6A;
-            --accent-hover: #4CAF50;
-            --text-color: #333333;
-            --heading-font: 'Arial', sans-serif;
-            --body-font: 'Georgia', serif;
-        }
+    <title>Raphael Daveal – Product Designer & Full-Stack Developer</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-        body {
-            font-family: var(--body-font);
-            color: var(--text-color);
-            line-height: 1.6;
-            background-image: url('images/daveal.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .splash-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 2rem;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .splash-content {
-            max-width: 1200px;
-        }
-
-        .splash-content h1 {
-            font-family: var(--heading-font);
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            color: #FFFFFF;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        .splash-content h3 {
-            font-family: var(--body-font);
-            font-size: clamp(1.1rem, 3vw, 1.6rem);
-            color: #EAEAEA;
-            margin: 0.5rem 0 1.5rem;
-            font-weight: normal;
-            line-height: 1;
-        }
-        .splash-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            color: #FFFFFF; 
-            opacity: 0.95;
-            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
-        }
-
-        .intro-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 2rem 4rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .intro-box p {
-            margin-bottom: 0;
-            color: #FFFFFF;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-            max-width: 65ch;
-        }
-
-        .intro-question-line {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        .splash-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .intro-box .splash-links {
-            display: none;
-        }
-
-        .splash-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.6rem 1.2rem;
-            width: 170px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-family: var(--heading-font);
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: #FFFFFF;
-            border: 1px solid transparent;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-        }
-
-        .splash-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            background-color: #333333;
-            color: #ffffff;
-            padding: 0.8rem 1.8rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-family: var(--heading-font);
-            font-weight: bold;
-            font-size: 1.1rem;
-            border: 0.5px solid rgba(255, 255, 255, 0.2);
-            transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #4a4a4a;
-            transform: translateY(-2px);
-            border-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .splash-link.behance {
-            background-color: #1769ff;
-        }
-        .splash-link.github {
-            background-color: #333333;
-        }
-        .splash-link.kaggle {
-            background-color: #20BEFF;
-        }
-        .profile-image-mobile {
-            display: none;
-        }
-
-        @media (max-width: 770px) {
-            .intro-box .splash-links {
-                display: none;
-            }
-
-            .splash-container {
-                padding: 2rem 1rem;
-                overflow-y: auto;
-            }
-            .splash-content h1 {
-                font-size: clamp(2.2rem, 6vw, 2.8rem);
-                letter-spacing: 1px;
-                line-height: 1.2;
-                margin-bottom: 0.5rem;
-            }
-            .splash-content h3 {
-                font-size: clamp(1rem, 4vw, 1.2rem);
-                line-height: 1.4;
-                letter-spacing: 0.5px;
-                margin: 0 0 1.5rem;
-            }
-            .intro-box {
-                padding: 1.5rem;
-                gap: 1rem;
-                flex-direction: column;
-                width: 100%;
-                max-width: 450px;
-            }
-            .intro-box p {
-                font-size: 1rem;
-                line-height: 1.6;
-                letter-spacing: 0.2px;
-            }
-            .profile-image-mobile {
-                display: block;
-                width: 180px;
-                height: 180px;
-                border-radius: 50%;
-                object-fit: cover;
-                margin: 0 auto 2rem;
-                border: 3px solid rgba(255, 255, 255, 0.251);
-            }
-            .splash-links {
-                justify-content: center;
-                gap: 1rem;
-                margin-bottom: 2rem;
-            }
-            .splash-link {
-                width: 120px;
-                padding: 0.7rem 1rem;
-                font-size: 1rem;
-                border-radius: 8px;
-            }
-            .cta-button {
-                padding: 0.8rem 1.6rem;
-                font-size: 1rem;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <main class="splash-container">
-        <div class="splash-content">
-            <img src="images/dp.jpg" alt="A picture of Raphael Daveal" class="profile-image-mobile">
-            <h1>Raphael Daveal</h1>
-            <h3>Product Designer | Full-Stack Developer | ML Engineer</h3>
-            <div class="splash-links">
-                <a href="https://www.behance.net/davealraphael" target="_blank" rel="noopener noreferrer" class="splash-link behance">
-                    Bēhance
-                </a>
-                <a href="https://github.com/Daveralphy" target="_blank" rel="noopener noreferrer" class="splash-link github">
-                    GitHub
-                </a>
-                <a href="https://www.kaggle.com/daveralphy" target="_blank" rel="noopener noreferrer" class="splash-link kaggle">
-                    Kaggle
-                </a>
+<header class="header">
+    <div class="container header-inner">
+
+        <div class="header-left">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+
+            <nav class="nav desktop-nav">
+                <a href="about/index.html">About</a>
+                <a href="projects/index.html">Projects</a>
+                <a href="services/index.html">Services</a>
+                <a href="blog/index.html">Blog</a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <div class="social-icons desktop-socials">
+                <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
             </div>
-            <div class="intro-box">
-                <p>
-                    <span class="intro-question-line">Do you have an idea for a digital product?</span>
-                    I can guide it from a simple sketch to a fully-functional application. Let's discuss how I can help bring your vision to life.
-                </p>
-                <div class="splash-links">
-                    <a href="https://www.behance.net/davealraphael" target="_blank" rel="noopener noreferrer" class="splash-link behance">
-                        Bēhance
-                    </a>
-                    <a href="https://github.com/Daveralphy" target="_blank" rel="noopener noreferrer" class="splash-link github">
-                        GitHub
-                    </a>
-                    <a href="https://www.kaggle.com/daveralphy" target="_blank" rel="noopener noreferrer" class="splash-link kaggle">
-                        Kaggle
-                    </a>
-                </div>
-                <a href="mailto:raphaeldaveal@gmail.com" class="cta-button">Contact Me</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+    <div class="mobile-links">
+        <a href="about/index.html">About</a>
+        <a href="projects/index.html">Projects</a>
+        <a href="services/index.html">Services</a>
+        <a href="blog/index.html">Blog</a>
+    </div>
+
+    <div class="mobile-socials">
+        <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
+    </div>
+</nav>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+            <h1>
+                I turn visions into<br>
+                <span>production-ready products</span>
+            </h1>
+            <p>
+                As a Product Designer and Full-Stack Developer, I bridge strategy
+                and code to deliver robust, user-friendly digital experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="projects/index.html" class="btn primary">View Work</a>
+                <a href="services/index.html" class="btn secondary">Work With Me</a>
             </div>
         </div>
-    </main>
+
+        <div class="hero-visual">
+            <div class="bars">
+                <span class="bar one"></span>
+                <span class="bar two"></span>
+            </div>
+            <img src="images/hero.jpeg" alt="Raphael Daveal">
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© 2025 Raphael Daveal</p>
+    </div>
+</footer>
 
 </body>
 </html>
