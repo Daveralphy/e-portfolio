@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raphael Daveal – Product Designer & Full-Stack Developer</title>
+    <title>Raphael Daveal – Product Designer & Full Stack Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,9 @@
 
 <header class="header">
     <div class="container header-inner">
-
         <div class="header-left">
-            <img src="images/logo.jpg" alt="Logo" class="logo">
-
-            <nav class="nav desktop-nav">
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <nav class="desktop-nav">
                 <a href="about/index.html">About</a>
                 <a href="projects/index.html">Projects</a>
                 <a href="services/index.html">Services</a>
@@ -30,73 +28,80 @@
         </div>
 
         <div class="header-right">
-            <div class="social-icons desktop-socials">
-                <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
-                <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <div class="desktop-socials">
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-kaggle"></i></a>
             </div>
 
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="hamburger" id="hamburger" aria-expanded="false">
+                <span></span><span></span><span></span>
             </button>
         </div>
-
     </div>
 </header>
 
-<nav class="mobile-menu" id="mobileMenu">
-    <div class="mobile-links">
-        <a href="about/index.html">About</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="services/index.html">Services</a>
-        <a href="blog/index.html">Blog</a>
-    </div>
+<div class="menu-overlay" id="menuOverlay"></div>
 
-    <div class="mobile-socials">
-        <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
-        <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
-    </div>
+<nav class="mobile-menu" id="mobileMenu">
+    <a href="about/index.html">About</a>
+    <a href="projects/index.html">Projects</a>
+    <a href="services/index.html">Services</a>
+    <a href="blog/index.html">Blog</a>
 </nav>
 
 <main>
-
 <section class="hero">
     <div class="container hero-grid">
 
         <div class="hero-text">
             <h1>
-                I turn visions into<br>
-                <span>production-ready products</span>
+                Have an idea you want to turn into<br>
+                <span>a real, working digital product?</span>
             </h1>
+
             <p>
-                As a Product Designer and Full-Stack Developer, I bridge strategy
-                and code to deliver robust, user-friendly digital experiences.
+                <strong>I can help with that.</strong><br><br>
+                I help founders, teams, and individuals turn ideas into
+                production-ready applications by combining product design,
+                backend engineering, and modern web and mobile technologies
+                into reliable, scalable solutions.
             </p>
+
             <div class="hero-buttons">
-                <a href="projects/index.html" class="btn primary">View Work</a>
-                <a href="services/index.html" class="btn secondary">Work With Me</a>
+                <a href="services/index.html" class="btn primary">Work With Me</a>
+                <a href="projects/index.html" class="btn secondary">View Projects</a>
             </div>
         </div>
 
         <div class="hero-visual">
-            <div class="bars">
-                <span class="bar one"></span>
-                <span class="bar two"></span>
+            <div class="tech-icons">
+                <i class="fab fa-python"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-android"></i>
+                <i class="fab fa-flutter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fas fa-palette"></i>
+                <i class="fas fa-brain"></i>
+                <i class="fas fa-code"></i>
+                <i class="fas fa-pen-nib"></i>
             </div>
-            <img src="images/hero.jpeg" alt="Raphael Daveal">
+
+            <div class="image-fade">
+                <img src="images/daveal.png" alt="Raphael Daveal">
+            </div>
         </div>
 
     </div>
 </section>
-
 </main>
 
 <footer class="footer">
-    <div class="container footer-inner">
-        <p>© 2025 Raphael Daveal</p>
+    <div class="container">
+        © 2025 Raphael Daveal
     </div>
 </footer>
 

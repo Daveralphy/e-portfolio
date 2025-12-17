@@ -1,34 +1,14 @@
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("menuOverlay");
 
-let menuOpen = false;
+function toggleMenu() {
+    mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("open");
 
-hamburger.addEventListener("click", () => {
-    if (!menuOpen) {
-        mobileMenu.style.transform = "translateX(100%)";
-        mobileMenu.style.display = "block";
+    const expanded = hamburger.getAttribute("aria-expanded") === "true";
+    hamburger.setAttribute("aria-expanded", !expanded);
+}
 
-        requestAnimationFrame(() => {
-            mobileMenu.style.transition = "transform 0.35s ease";
-            mobileMenu.style.transform = "translateX(0)";
-        });
-
-        hamburger.children[0].style.transform = "rotate(45deg) translateY(6px)";
-        hamburger.children[1].style.opacity = "0";
-        hamburger.children[2].style.transform = "rotate(-45deg) translateY(-6px)";
-
-        menuOpen = true;
-    } else {
-        mobileMenu.style.transform = "translateX(100%)";
-
-        setTimeout(() => {
-            mobileMenu.style.display = "none";
-        }, 350);
-
-        hamburger.children[0].style.transform = "none";
-        hamburger.children[1].style.opacity = "1";
-        hamburger.children[2].style.transform = "none";
-
-        menuOpen = false;
-    }
-});
+hamburger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
