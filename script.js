@@ -24,3 +24,11 @@ hamburger.addEventListener("click", (e) => {
 });
 
 overlay.addEventListener("click", closeMenu);
+
+const testimonials = document.querySelector(".testimonials");
+
+if (testimonials && window.innerWidth < 900) {
+    setInterval(() => {
+        testimonials.scrollBy({ left: 300, behavior: "smooth" });
+    }, 4000);
+}
