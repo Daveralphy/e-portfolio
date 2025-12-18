@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Raphael Daveal</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+
+        <div class="header-left">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="">Blog</a>
+        </nav>
+
+        <div class="header-right">
+            <a href="services.html" class="header-cta">Work With Me</a>
+
+            <button class="hamburger" id="hamburger" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="">Blog</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero">
+    <div class="container">
+
+        <div class="projects-intro">
+            <h1>Projects across design, development, and analytics</h1>
+            <p>
+                I work on projects that span product design, full stack
+                development, and data driven systems. From shaping user
+                experiences to building scalable applications and extracting
+                insights through analytics, each project is approached with
+                clarity and long term value.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/webapp.jpg" alt="Design projects">
+                </div>
+                <div class="project-content">
+                    <h3>Designs</h3>
+                    <p>
+                        UI and UX design work including wireframes, prototypes,
+                        and design systems focused on usability and clarity.
+                    </p>
+                    <a href="#" class="project-btn">View Design Work</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/programming.jpg" alt="Apps and websites">
+                </div>
+                <div class="project-content">
+                    <h3>Apps and Websites</h3>
+                    <p>
+                        Full stack web and mobile applications built with modern
+                        technologies from backend logic to polished interfaces.
+                    </p>
+                    <a href="#" class="project-btn">View Apps and Websites</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/analytics.jpg" alt="Analytics projects">
+                </div>
+                <div class="project-content">
+                    <h3>Analytics</h3>
+                    <p>
+                        Data analysis, dashboards, and intelligent systems using
+                        Python and analytics tools to support better decisions.
+                    </p>
+                    <a href="#" class="project-btn">View Analytics Projects</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-copy">
+            © <span id="year"></span> – Portfolio Designed by Raphael Daveal
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <a href="https://www.linkedin.com/in/daveralphy" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
