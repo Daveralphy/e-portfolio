@@ -17,22 +17,20 @@
 
 <header class="header">
     <div class="container header-inner">
+
         <div class="header-left">
             <img src="images/logo.png" alt="Logo" class="logo">
-            <nav class="desktop-nav">
-                <a href="about/index.html">About</a>
-                <a href="projects/index.html">Projects</a>
-                <a href="services/index.html">Services</a>
-                <a href="blog/index.html">Blog</a>
-            </nav>
         </div>
 
+        <nav class="desktop-nav">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="">Blog</a>
+        </nav>
+
         <div class="header-right">
-            <div class="desktop-socials">
-                <a href="#"><i class="fab fa-behance"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-kaggle"></i></a>
-            </div>
+            <a href="services.html" class="header-cta">Work With Me</a>
 
             <button class="hamburger" id="hamburger" aria-expanded="false">
                 <span></span>
@@ -40,15 +38,16 @@
                 <span></span>
             </button>
         </div>
+
     </div>
 
     <div class="menu-overlay" id="menuOverlay"></div>
 
     <nav class="mobile-menu" id="mobileMenu">
-        <a href="about/index.html">About</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="services/index.html">Services</a>
-        <a href="blog/index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="">Blog</a>
     </nav>
 </header>
 
@@ -70,8 +69,8 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="services/index.html" class="btn primary">Work With Me</a>
-                <a href="projects/index.html" class="btn secondary">View Projects</a>
+                <a href="about.html" class="btn primary">About Me</a>
+                <a href="projects.html" class="btn secondary">View My Work</a>
             </div>
         </div>
 
@@ -99,8 +98,17 @@
 </main>
 
 <footer class="footer">
-    <div class="container">
-        © 2025 Raphael Daveal
+    <div class="container footer-inner">
+        <div class="footer-copy">
+            © <span id="year"></span> Raphael Daveal
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <a href="https://www.linkedin.com/in/daveralphy" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </div>
 </footer>
 

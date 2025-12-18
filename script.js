@@ -1,6 +1,9 @@
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 const overlay = document.getElementById("menuOverlay");
+const yearSpan = document.getElementById("year");
+
+yearSpan.textContent = new Date().getFullYear();
 
 function openMenu() {
     mobileMenu.classList.add("open");

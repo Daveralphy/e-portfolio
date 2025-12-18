@@ -24,45 +24,49 @@ body {
 .header {
     position: relative;
     border-bottom: 1px solid #e5e7eb;
-    padding: 12px 0;
+    padding: 14px 0;
 }
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    gap: 28px;
 }
 
 .logo {
-    height: 36px;
+    height: 44px;
 }
 
 .desktop-nav {
     display: flex;
-    gap: 22px;
+    justify-content: center;
+    gap: 32px;
 }
 
 .desktop-nav a {
     text-decoration: none;
-    color: #475569;
-    font-weight: 500;
+    font-weight: 600;
+    color: #0f172a;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
 }
 
-.desktop-socials a {
-    font-size: 18px;
-    color: #475569;
+.header-cta {
+    background: #1e40af;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .hamburger {
@@ -71,7 +75,6 @@ body {
     gap: 5px;
     background: none;
     border: none;
-    cursor: pointer;
 }
 
 .hamburger span {
@@ -218,12 +221,36 @@ body {
 .footer {
     border-top: 1px solid #e5e7eb;
     padding: 20px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
     text-align: center;
+    flex: 1;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials a {
+    font-size: 18px;
+    color: #475569;
 }
 
 @media (max-width: 900px) {
-    .desktop-nav,
-    .desktop-socials {
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desktop-nav {
         display: none;
     }
 
@@ -243,5 +270,14 @@ body {
     .tech-icons i {
         font-size: 28px;
         opacity: 0.6;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-socials {
+        justify-content: center;
     }
 }
