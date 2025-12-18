@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – Raphael Daveal</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="about-page">
+
+<header class="header">
+    <div class="container header-inner">
+
+        <div class="header-left">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="">Blog</a>
+        </nav>
+
+        <div class="header-right">
+            <a href="services.html" class="header-cta">Work With Me</a>
+
+            <button class="hamburger" id="hamburger" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="">Blog</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+            <h1 style="color:#1e40af; margin-bottom:32px;">
+                My Background
+            </h1>
+            <p style="font-size:20px; line-height:1.9;">
+                My background spans product design, full stack development, and
+                data driven systems. I have worked on projects ranging from early
+                stage concepts to production ready applications, supporting both
+                individuals and teams across web and mobile platforms. Much of my
+                work involves taking ideas from early definition through design,
+                development, and deployment, ensuring that each part of the
+                product works together as a cohesive, scalable system.
+            </p>
+        </div>
+
+        <div class="hero-visual about-visual">
+            <div class="image-wrap">
+                <img src="images/daveal.png" alt="Raphael Daveal">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="hero">
+    <div class="container">
+
+        <h1 style="text-align:center; color:#1e40af; margin-bottom:56px;">
+            How I approach building products
+        </h1>
+
+        <div class="projects-grid">
+
+            <div class="project-card" style="cursor:default;">
+                <div class="project-image">
+                    <img src="images/intent.jpg" alt="Design with intent">
+                </div>
+                <div class="project-content">
+                    <h3>Design with intent</h3>
+                    <p>
+                        Every design decision starts with clarity. I focus on
+                        usability, structure, and purpose, ensuring interfaces
+                        solve real problems before they look good.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card" style="cursor:default;">
+                <div class="project-image">
+                    <img src="images/reliability.jpg" alt="Build for reliability">
+                </div>
+                <div class="project-content">
+                    <h3>Build for reliability</h3>
+                    <p>
+                        I develop applications with long term stability in mind,
+                        using clean architecture, scalable backend logic, and
+                        modern technologies that support growth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card" style="cursor:default;">
+                <div class="project-image">
+                    <img src="images/data.jpg" alt="Decide with data">
+                </div>
+                <div class="project-content">
+                    <h3>Decide with data</h3>
+                    <p>
+                        Where data is available, I rely on analytics, dashboards,
+                        and data driven systems to guide decisions and improve
+                        outcomes.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+            <h1 style="color:#1e40af; margin-bottom:32px;">
+                About my work
+            </h1>
+            <p style="font-size:20px; line-height:1.9;">
+                I work at the intersection of product design, software development,
+                and analytics to build digital products that are practical,
+                scalable, and grounded in real user needs. My focus is not just
+                on how things look or work in isolation, but on how they perform
+                together as complete systems that can evolve over time.
+            </p>
+
+            <div style="margin-top:40px;">
+                <a href="projects.html" class="btn primary">
+                    View my Projects
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual about-visual">
+            <div class="image-wrap">
+                <img src="images/daveal.png" alt="Raphael Daveal">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-copy">
+            © <span id="year"></span> – Portfolio Designed by Raphael Daveal
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <a href="https://www.linkedin.com/in/daveralphy" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
