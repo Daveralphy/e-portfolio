@@ -25,10 +25,54 @@ hamburger.addEventListener("click", (e) => {
 
 overlay.addEventListener("click", closeMenu);
 
-const testimonials = document.querySelector(".testimonials");
+function initAutoScroll(selector) {
+    const element = document.querySelector(selector);
+    if (!element) return;
 
-if (testimonials && window.innerWidth < 900) {
-    setInterval(() => {
-        testimonials.scrollBy({ left: 300, behavior: "smooth" });
-    }, 4000);
+    let scrollInterval;
+    let resumeTimeout;
+    let direction = 1;
+
+    const startScrolling = () => {
+        clearInterval(scrollInterval);
+        scrollInterval = setInterval(() => {
+            if (element.scrollWidth <= element.clientWidth) return;
+
+            if (direction === 1) {
+                if (element.scrollLeft + element.clientWidth >= element.scrollWidth - 1) {
+                    direction = -1;
+                } else {
+                    element.scrollLeft += 1;
+                }
+            } else {
+                if (element.scrollLeft <= 0) {
+                    direction = 1;
+                } else {
+                    element.scrollLeft -= 1;
+                }
+            }
+        }, 30);
+    };
+
+    const stopScrolling = () => {
+        clearInterval(scrollInterval);
+        clearTimeout(resumeTimeout);
+    };
+
+    const resumeScrolling = () => {
+        resumeTimeout = setTimeout(startScrolling, 5000);
+    };
+
+    element.addEventListener("touchstart", stopScrolling, { passive: true });
+    element.addEventListener("touchend", resumeScrolling);
+    if (window.matchMedia("(hover: hover)").matches) {
+        element.addEventListener("mouseenter", stopScrolling);
+        element.addEventListener("mouseleave", resumeScrolling);
+    }
+    
+    startScrolling();
 }
+
+initAutoScroll(".testimonial-grid");
+initAutoScroll(".tools-wrapper");
+initAutoScroll(".testimonials");

@@ -13,14 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style/about.css">
 </head>
+
 <body class="about-page">
 
 <header class="header">
     <div class="container header-inner">
-
         <div class="header-left">
             <img src="images/logo.png" alt="Logo" class="logo">
         </div>
@@ -28,145 +29,214 @@
         <nav class="desktop-nav">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
             <a href="">Blog</a>
         </nav>
 
         <div class="header-right">
-            <a href="services.html" class="header-cta">Work With Me</a>
-
-            <button class="hamburger" id="hamburger" aria-expanded="false">
+            <a href="projects.html" class="header-cta">View My Work</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
-
     </div>
 
-    <div class="menu-overlay" id="menuOverlay"></div>
-
-    <nav class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
         <a href="">Blog</a>
-    </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
 </header>
 
 <main>
 
-<section class="hero">
-    <div class="container hero-grid">
-
-        <div class="hero-text">
-            <h1 style="color:#1e40af; margin-bottom:32px; font-size: 3rem;">
-                My Background
-            </h1>
-            <p style="font-size:20px; line-height:1.9;">
-                My background spans product design, full stack development, and
-                data driven systems. I have worked on projects ranging from early
-                stage concepts to production ready applications, supporting both
-                individuals and teams across web and mobile platforms. Much of my
-                work involves taking ideas from early definition through design,
-                development, and deployment, ensuring that each part of the
-                product works together as a cohesive, scalable system.
-            </p>
-        </div>
-
-        <div class="hero-visual about-visual">
-            <div class="image-wrap">
-                <img src="images/daveal.png" alt="Raphael Daveal">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="hero">
+<section class="about-section">
     <div class="container">
-
-        <h1 style="color:#1e40af; margin-bottom:32px; font-size: 3rem;">
-            How I approach building products
-        </h1>
-
-        <div class="projects-grid">
-
-            <div class="project-card" style="cursor:default;">
-                <div class="project-image">
-                    <img src="images/intent.jpg" alt="Design with intent">
-                </div>
-                <div class="project-content">
-                    <h3>Design with intent</h3>
-                    <p>
-                        Every design decision starts with clarity. I focus on
-                        usability, structure, and purpose, ensuring interfaces
-                        solve real problems before they look good.
-                    </p>
-                </div>
+        <div class="about-box split-grid">
+            <div class="split-text">
+                <h1>ABOUT ME</h1>
+                <p>
+                    My name is Raphael Daveal. I am a product designer and software
+                    developer focused on building digital products that are clear,
+                    reliable, and practical to use.
+                </p>
+                <p>
+                    I work at the intersection of design, engineering, and analytics,
+                    helping ideas move from concept to production-ready systems that
+                    are scalable and easy to maintain.
+                </p>
             </div>
 
-            <div class="project-card" style="cursor:default;">
-                <div class="project-image">
-                    <img src="images/reliability.jpg" alt="Build for reliability">
-                </div>
-                <div class="project-content">
-                    <h3>Build for reliability</h3>
-                    <p>
-                        I develop applications with long term stability in mind,
-                        using clean architecture, scalable backend logic, and
-                        modern technologies that support growth.
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-card" style="cursor:default;">
-                <div class="project-image">
-                    <img src="images/data.jpg" alt="Decide with data">
-                </div>
-                <div class="project-content">
-                    <h3>Decide with data</h3>
-                    <p>
-                        Where data is available, I rely on analytics, dashboards,
-                        and data driven systems to guide decisions and improve
-                        outcomes.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="hero">
-    <div class="container hero-grid">
-
-        <div class="hero-text">
-            <h1 style="color:#1e40af; margin-bottom:32px;">
-                About my work
-            </h1>
-            <p style="font-size:20px; line-height:1.9;">
-                I work at the intersection of product design, software development,
-                and analytics to build digital products that are practical,
-                scalable, and grounded in real user needs. My focus is not just
-                on how things look or work in isolation, but on how they perform
-                together as complete systems that can evolve over time.
-            </p>
-
-            <div style="margin-top:40px;">
-                <a href="projects.html" class="btn primary">
-                    View my Projects
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-visual about-visual">
-            <div class="image-wrap">
+            <div class="split-image">
                 <img src="images/daveal.png" alt="Raphael Daveal">
             </div>
         </div>
+    </div>
+</section>
 
+<section class="about-section">
+    <div class="container">
+        <div class="about-box desktop-center">
+            <h1 class="experience-title">PROFESSIONAL EXPERIENCE</h1>
+
+            <div class="experience-grid">
+                <div class="experience-card project-card">
+                    <h3 class="role">Machine Learning Intern</h3>
+                    <div class="company">Pioneer Artificial Intelligence Academy</div>
+                    <div class="meta">Jan 2025 – Present · Remote</div>
+                    <ul>
+                        <li>Built and tested machine learning models.</li>
+                        <li>Integrated AI outputs into usable interfaces.</li>
+                        <li>Worked on applied data science projects.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card project-card">
+                    <h3 class="role">Product Designer & Full-Stack Developer</h3>
+                    <div class="company">Davelop Tech</div>
+                    <div class="meta">Jan 2025 – Present · Remote</div>
+                    <ul>
+                        <li>Designed and built production-ready applications.</li>
+                        <li>Handled UI, backend logic, APIs, and deployment.</li>
+                        <li>Delivered complete products for real clients.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card project-card">
+                    <h3 class="role">Fintech App Developer</h3>
+                    <div class="company">Nexora Technology</div>
+                    <div class="meta">May 2025 – Sept 2025 · Remote</div>
+                    <ul>
+                        <li>Designed fintech flows in Figma.</li>
+                        <li>Converted designs into working applications.</li>
+                        <li>Focused on clean UI and reliability.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-box desktop-center">
+            <h1>WHAT I DO AND HOW I WORK</h1>
+
+            <div class="work-grid">
+                <div class="work-card project-card">
+                    <h3>Product design and UX</h3>
+                    <p>
+                        I design user experiences, wireframes, prototypes, and
+                        design systems that prioritize clarity and usability above all else.
+                    </p>
+                </div>
+
+                <div class="work-card project-card">
+                    <h3>Application development</h3>
+                    <p>
+                        I build web and mobile applications from the ground up, creating scalable backend
+                        systems, APIs, and seamless integrations.
+                    </p>
+                </div>
+
+                <div class="work-card project-card">
+                    <h3>Analytics and data systems</h3>
+                    <p>
+                        I work with dashboards, data pipelines, and machine learning
+                        systems to help teams make informed, data-driven decisions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tools-wrapper">
+                <div class="tools-row">
+                    <div class="tool python"><i class="fab fa-python"></i></div>
+                    <div class="tool js"><i class="fab fa-js"></i></div>
+                    <div class="tool html"><i class="fab fa-html5"></i></div>
+                    <div class="tool css"><i class="fab fa-css3-alt"></i></div>
+                    <div class="tool figma"><i class="fab fa-figma"></i></div>
+                    <div class="tool github"><i class="fab fa-github"></i></div>
+                    <div class="tool db"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-box desktop-center">
+            <h1>WHAT PEOPLE SAY</h1>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card project-card">
+                    <p>
+                        "Raphael has a unique ability to translate complex AI concepts into working products. His problem-solving skills and practical understanding of machine learning systems made a significant impact on our project's success."
+                    </p>
+                    <div class="testimonial-person">
+                        <img src="images/daveal.png" alt="Dallan Quass">
+                        <div>
+                            <strong>Dallan Quass</strong>
+                            <span>AI Research Lead, Pioneer AI Academy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card project-card">
+                    <p>
+                        "It is rare to find a developer who understands design so well. Raphael delivers reliable code, communicates clearly at every stage, and ensures the final user experience is polished and intuitive."
+                    </p>
+                    <div class="testimonial-person">
+                        <img src="images/daveal.png" alt="Matthews Maseko">
+                        <div>
+                            <strong>Matthews Maseko</strong>
+                            <span>Senior Software Engineer, Davelop Tech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card project-card">
+                    <p>"Raphael transformed our initial ideas into a fully functional platform. His technical expertise, combined with his focus on user experience, resulted in a product that our customers love."</p>
+                    <div class="testimonial-person">
+                        <img src="images/daveal.png" alt="Sarah Jenkins">
+                        <div>
+                            <strong>Sarah Jenkins</strong>
+                            <span>Product Founder, Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card project-card">
+                    <p>"Raphael's attention to detail in our fintech application was outstanding. He ensured every transaction flow was secure and user-friendly."</p>
+                    <div class="testimonial-person">
+                        <img src="images/daveal.png" alt="James Carter">
+                        <div>
+                            <strong>James Carter</strong>
+                            <span>Product Manager, Nexora Technology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card project-card">
+                    <p>"Collaborating with Raphael on data models was a pleasure. He writes clean, efficient code that integrates perfectly with our analytics pipeline."</p>
+                    <div class="testimonial-person">
+                        <img src="images/daveal.png" alt="Emily Chen">
+                        <div>
+                            <strong>Emily Chen</strong>
+                            <span>Data Scientist, Pioneer AI Academy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="projects.html" class="btn primary">
+                View my Projects
+            </a>
+        </div>
     </div>
 </section>
 
@@ -186,6 +256,8 @@
         </div>
     </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
