@@ -171,6 +171,7 @@ body {
 
 .btn:hover { opacity: 0.9; }
 
+.btn.primary { background-color: #1e40af; }
 .btn.behance { background-color: #1769ff; }
 .btn.dribbble { background-color: #ea4c89; }
 .btn.kaggle { background-color: #20beff; }
