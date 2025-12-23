@@ -3,64 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raphael Daveal – Product Designer & Full-Stack Developer</title>
+    <title>Apps and Websites - Raphael Daveal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
 </head>
 <body>
 
 <header class="header">
     <div class="container header-inner">
-        <img src="images/logo.jpg" alt="Logo" class="logo">
-        <nav class="nav">
-            <a href="about/index.html">About</a>
-            <a href="projects/index.html">Projects</a>
-            <a href="services/index.html">Services</a>
-            <a href="blog/index.html">Blog</a>
+        <div class="header-left">
+            <img src="../images/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="https://sites.google.com/view/daveralphy/introduction-bio" target="_blank">Blog</a>
         </nav>
+
+        <div class="header-right">
+            <a href="../services.html" class="header-cta">Work With Me</a>
+            
+            <button class="hamburger" id="hamburger" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="https://sites.google.com/view/daveralphy/introduction-bio" target="_blank">Blog</a>
+    </nav>
 </header>
 
 <main>
+    <section class="hero">
+        <div class="container">
+            <div class="projects-intro">
+            <h1>A Collection of Apps and Websites</h1>
 
-<section class="hero">
-    <div class="container hero-grid">
 
-        <div class="hero-text">
-            <h1>
-                I turn visions into<br>
-                <span>production-ready products</span>
-            </h1>
-            <p>
-                As a Product Designer and Full-Stack Developer, I bridge strategy
-                and code to deliver robust, user-friendly digital experiences.
-            </p>
-            <div class="hero-buttons">
-                <a href="projects/index.html" class="btn primary">View Work</a>
-                <a href="services/index.html" class="btn secondary">Work With Me</a>
+                <p>A collection of applications and websites I've built, spanning various domains.</p>
             </div>
-        </div>
 
-        <div class="hero-visual">
-            <img src="images/hero.jpeg" alt="Raphael Daveal">
-        </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/logo.png" alt="DalPay">
+                    </div>
+                    <div class="project-content">
+                        <h3>DalPay - FinTech</h3>
+                        <p>A FinTech application focused on secure payments and financial tracking.</p>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
 
-    </div>
-</section>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/logo.png" alt="DaLearn">
+                    </div>
+                    <div class="project-content">
+                        <h3>DaLearn - Education</h3>
+                        <p>An educational platform designed to make online learning interactive and accessible.</p>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
 
-</main>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/logo.png" alt="DalPal">
+                    </div>
+                    <div class="project-content">
+                        <h3>DalPal - Social</h3>
+                        <p>A social networking app that aims to connect people through shared interests.</p>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/logo.png" alt="DalFit">
+                    </div>
+                    <div class="project-content">
+                        <h3>DalFit - Health</h3>
+                        <p>A health and fitness app to help users track workouts and maintain a healthy lifestyle.</p>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../images/logo.png" alt="DalBuy">
+                    </div>
+                    <div class="project-content">
+                        <h3>DalBuy - Shop</h3>
+                        <p>An e-commerce platform for seamless online shopping and inventory management.</p>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 <footer class="footer">
     <div class="container footer-inner">
-        <p>© 2025 Raphael Daveal</p>
-        <div class="socials">
-            <a href="https://www.behance.net/davealraphael" target="_blank">Behance</a>
-            <a href="https://github.com/Daveralphy" target="_blank">GitHub</a>
-            <a href="https://www.kaggle.com/daveralphy" target="_blank">Kaggle</a>
+        <div class="footer-copy">
+            © <span id="year"></span> – Portfolio Designed by Raphael Daveal
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://github.com/Daveralphy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.behance.net/davealraphael" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.kaggle.com/daveralphy" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <a href="https://www.linkedin.com/in/daveralphy" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
 </footer>

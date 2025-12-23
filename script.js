@@ -76,3 +76,46 @@ function initAutoScroll(selector) {
 initAutoScroll(".testimonial-grid");
 initAutoScroll(".tools-wrapper");
 initAutoScroll(".testimonials");
+
+const statsSection = document.querySelector(".stats-row");
+if (statsSection) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll(".stat-number");
+                counters.forEach((counter) => {
+                    const target = parseFloat(counter.getAttribute("data-target"));
+                    const suffix = counter.getAttribute("data-suffix") || "";
+                    const duration = 2000; // 2 seconds
+                    const start = 0;
+                    const startTime = performance.now();
+
+                    function update(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        
+                        // Ease out quart
+                        const ease = 1 - Math.pow(1 - progress, 4);
+                        
+                        const current = start + (target - start) * ease;
+
+                        if (Number.isInteger(target)) {
+                            counter.textContent = Math.floor(current) + suffix;
+                        } else {
+                            counter.textContent = current.toFixed(1) + suffix;
+                        }
+
+                        if (progress < 1) {
+                            requestAnimationFrame(update);
+                        } else {
+                            counter.textContent = target + suffix; 
+                        }
+                    }
+                    requestAnimationFrame(update);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    observer.observe(statsSection);
+}

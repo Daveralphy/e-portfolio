@@ -183,6 +183,33 @@
     scrollbar-width: none;
 }
 
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin: 10px 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e40af;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #475569;
+    text-align: center;
+}
+
 @media (max-width: 900px) {
     .desktop-center {
         text-align: left;
@@ -229,5 +256,9 @@
     .about-box .btn {
         display: table;
         margin: 0 auto;
+    }
+
+    .stats-row {
+        gap: 24px;
     }
 }
