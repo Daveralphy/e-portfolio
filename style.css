@@ -293,8 +293,12 @@ body {
 }
 
 .projects-intro h1 {
-    color: #1e40af;
+    color: #0f172a;
     margin-bottom: 24px;
+}
+
+.projects-intro span {
+    color: #1e40af;
 }
 
 .projects-intro p {
@@ -462,14 +466,18 @@ body {
         overflow-x: auto;
         flex-wrap: nowrap;
         padding-bottom: 12px;
+        scrollbar-width: none;
     }
+    .tools-row::-webkit-scrollbar { display: none; }
 
     .testimonials {
         display: flex;
         overflow-x: auto;
         gap: 20px;
         scroll-snap-type: x mandatory;
+        scrollbar-width: none;
     }
+    .testimonials::-webkit-scrollbar { display: none; }
 
     .testimonial-card {
         min-width: 280px;
