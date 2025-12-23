@@ -140,6 +140,10 @@ body {
     margin-bottom: 24px;
 }
 
+.projects-intro h1 span {
+    color: #1e40af;
+}
+
 .projects-intro p {
     font-size: 18px;
     line-height: 1.8;
@@ -203,8 +207,23 @@ body {
     flex: 1;
 }
 
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.project-tag {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .project-btn {
-    align-self: flex-start;
     padding: 10px 20px;
     border-radius: 24px;
     border: 1px solid #c7d2fe;
