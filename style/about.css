@@ -261,4 +261,10 @@
     .stats-row {
         gap: 24px;
     }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
 }
