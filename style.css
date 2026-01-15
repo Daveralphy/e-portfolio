@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-    height: 44px;
+    height: 80px;
 }
 
 .desktop-nav {
@@ -85,7 +85,7 @@ body {
 
 .mobile-menu {
     position: absolute;
-    top: 60px;
+    top: 110px;
     right: 20px;
     background: #ffffff;
     border-radius: 12px;
