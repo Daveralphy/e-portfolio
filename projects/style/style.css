@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-.logo { height: 44px; }
+.logo { height: 60px; }
 
 .desktop-nav {
     display: flex;
@@ -82,7 +82,7 @@ body {
 
 .mobile-menu {
     position: absolute;
-    top: 60px;
+    top: 90px;
     right: 20px;
     background: #ffffff;
     border-radius: 12px;
